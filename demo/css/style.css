@@ -1,0 +1,370 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+#btn{
+	width: 44px;
+	height: 44px;
+	background: url(../img/music_off.png);
+	position: fixed;
+	top: 60px;
+	right: 20px;
+	z-index: 20000;
+	cursor: pointer;
+}
+.title{
+	width: 100%;
+	height: 40px;
+	background-color: #000000;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+	color: #FFFFFF;
+	line-height: 40px;
+	text-align: center;
+	font-size: 24px;
+	white-space: nowrap;
+}
+.xz{
+	animation: move 2s linear infinite;
+}
+@keyframes move{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+/*第一屏图片*/
+.swiper-slide.one{
+	background: url(../img/onebg.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.swiper-slide.one #box{
+	width: 250px;
+	height: 277px;
+	/*position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -125px;
+	margin-top: -138.5px;*/
+	margin: 0 auto;
+	margin-top: 20%;
+}
+.swiper-slide.one #box .img{
+	width: 250px;
+	height: 277px;
+	background-color: #FFFFFF;
+}
+.swiper-slide.one .img .pimg{
+	width: 100%;
+	height: 100%;
+	border: solid 9px #FFFFFF;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.swiper-slide.one .img .pimg img{
+	width: 234px;
+	height: 355px;
+	margin-top: -46px;
+}
+
+#bottom_1{
+	width: 256px;
+	height: 178px;
+	margin: 0 auto;
+	margin-top: 10px;
+	position: relative;
+}
+#bottom_1 .pim{
+	width: 240px;
+	height: 94px;
+	margin: 0 auto;
+}
+#bottom_1 .pim img{
+	width: 240px;
+	height: 94px;
+}
+#bottom_1 .dw{
+	width: 53px;
+	height: 58px;
+	position: absolute;
+	left: 37px;
+	top: 0px;
+}
+#bottom_1 .dw .jz{
+	width: 53px;
+	height: 53px;
+	position: relative;
+}
+#bottom_1 .dw .jz img{
+	width: 53px;
+	height: 58px;
+}
+/*第二屏*/
+.swiper-slide.two{
+	background: url(../img/twobg.jpg) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+#sanjiao{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	overflow: hidden;
+	z-index: 0;
+}
+#sanjiao img{
+	width: 250px;
+	height: 250px;
+	/*animation: sanjiao 2s infinite;*/
+}
+#sanjiaodingwei{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+#sanjiao_1{
+	position: absolute;
+	bottom: 10%;
+	right: 0px;
+	z-index: 0;
+}
+#sanjiao_1 img{
+	width: 250px;
+	height: 250px;
+}
+.swiper-slide.two .xx{
+	width: 384px;
+	height: 648px;
+	z-index: 0;
+}
+#image{
+	width: 230px;
+	height: 291px;
+	margin: 0 auto;
+	margin-top: 30%;
+}
+#image .dw{
+	width: 100%;
+	height: 100%;
+	border: solid 9px #FFEBEB;
+	box-sizing: border-box;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+#image .dw img{
+	width: 230px;
+	height: 355px;
+	margin-top: -32px;
+}
+#fc{
+	width: 75px;
+	height: 75px;
+	position: relative;
+	margin: 0 auto;
+	top: -40px;
+	left: 100px;
+	z-index: 2222;
+	
+}
+#fc .fc_img{
+	width: 75px;
+	height: 75px;
+	position: relative;
+	/*background: url(../img/fengche.gif) no-repeat -5px 5px;*/
+}
+#fc .fc_img img{
+	width: 75px;
+	height: 75px;
+}
+#font{
+	width: 230px;
+	height: 110px;
+	margin: 0 auto;
+	background-color: #FFEBEB;
+	position: relative;
+	top: -75px;
+	z-index: 0;
+}
+#font img{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+#font .tt{
+	height: 20px;
+}
+#font .t1{
+	height: 2px;
+}
+/*第三屏*/
+.swiper-slide.three{
+	background: url(../img/twobg.jpg) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+#right{
+	width: 263px;
+	height: 200px;
+	position: absolute;
+	right: 0px;
+	top: 40px;
+	z-index:1;
+}
+#right .ble{
+	width: 263px;
+	height: 200px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+#right .ble img{
+	width: 263px;
+	height: 200px;
+}
+#bottom{
+	width: 263px;
+	height: 200px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	z-index:1;
+}
+#bottom .ble{
+	width: 263px;
+	height: 200px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+#bottom .ble img{
+	width: 263px;
+	height: 200px;
+}
+#like{
+	position: relative;
+	z-index: 222;
+}
+#like .aini{
+	display: block;
+	width: 240px;
+	height: 40px;
+	position: relative;
+	left: 50%;
+	margin-left: -90px;
+}
+#like .yibeizi{
+	display: block;
+	width: 238px;
+	height: 40px;
+	position: relative;
+	left: 50%;
+	margin-left: -100px;
+}
+/*第四屏*/
+.swiper-slide.four{
+	background: url(../img/twobg.jpg) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+#four_img{
+	width: 295px;
+	height: 347px;
+	margin: 0 auto;
+	margin-top: 30%;
+	overflow: hidden;
+}
+#four_img .left{
+	width: 153px;
+	height: 347px;
+	float: left;
+	margin-right: 2px;
+}
+#four_img .right{
+	width: 140px;
+	height: 347px;
+	float: left;
+}
+#four_img .four_img{
+	width: 100%;
+	border: solid 9px #FFFFFF;
+	box-sizing: border-box;
+	height: 86px;
+	overflow: hidden;
+}
+#four_img .four_img.four_1 img{
+	width: 203px;
+	height: 86px;
+	margin-left: -25px;
+}
+#four_img .four_2{
+	clear: both;
+	height: 253px;
+	margin-top: 2px;
+}
+#four_img .four_img.four_1 img{
+	width: 203px;
+	height: 86px;
+	margin-left: -25px;
+}
+#four_img .four_2 img{
+	width: 165px;
+	height: 243px;
+	margin-left: -11px;
+}
+#four_img .four_3{
+	clear: both;
+	height: 185px;
+	margin-top: 2px;
+}
+#four_img .four_3 img{
+	width: 130px;
+	height: 224px;
+	margin-top: -24px;
+}
+#four_img .four_4{
+	clear: both;
+	height: 152px;
+	margin-top: 2px;
+}
+#four_img .four_4 img{
+	width: 145px;
+	height: 145px;
+	margin-left: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
